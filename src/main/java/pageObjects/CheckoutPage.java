@@ -1,12 +1,12 @@
-package pomFrmk.pageObjects;
+package pageObjects;
 
+import abstractComponents.AbstractHeader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import pomFrmk.abstractComponents.AbstractHeader;
 
 import java.util.List;
 

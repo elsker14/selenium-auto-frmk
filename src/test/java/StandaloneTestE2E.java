@@ -1,5 +1,3 @@
-package e2eFrmk;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -36,7 +34,7 @@ public class StandaloneTestE2E {
     public void test() throws InterruptedException {
         String productName = "ZARA COAT 3";
 
-        // Configure browsert and get to page
+        // Configure browser and get to page
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://rahulshettyacademy.com/client");
