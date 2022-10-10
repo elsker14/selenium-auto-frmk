@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/OrderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_suite_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractHeader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ProductCatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ProductCataloguePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/SummaryOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ConfirmationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ErrorValidationPOMTestE2E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandalonePOMTestE2ECourseSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandalonePOMTestE2EMySolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandaloneTestE2E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandaloneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +142,7 @@
       <updated>1665306600489</updated>
       <workItem from="1665306601674" duration="855000" />
       <workItem from="1665307473563" duration="21561000" />
-      <workItem from="1665419957670" duration="2910000" />
+      <workItem from="1665419957670" duration="4161000" />
     </task>
     <task id="LOCAL-00001" summary="first 2 sections of creating a selenium, testng with multiple abstraction levels framework">
       <created>1665323433946</created>
@@ -168,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665335007914</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="corrected frmk bc before, after methods were inefective">
+      <created>1665423116740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665423116740</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,17 +174,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first 2 sections of creating a selenium, testng with multiple abstraction levels framework" />
     <MESSAGE value="3rd section almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd section almost done" />
+    <MESSAGE value="corrected frmk bc before, after methods were inefective" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected frmk bc before, after methods were inefective" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SubmitOrderTest.java</url>
-          <line>29</line>
+          <line>34</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

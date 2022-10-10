@@ -20,11 +20,21 @@ public class ErrorValidationTest extends BaseTest {
     @Test
     public void ProductErrorValidation() {
         String productName = "ZARA COAT 3";
+
+        // Log in to app and go to product catalogue page
         ProductCataloguePage productCataloguePage = landingPage.loginApplication("iancujianu98@gmail.com", "Pernutepufoase14*");
+
+        // Get all products on page
         List<WebElement> products = productCataloguePage.getProductList();
+
+        // Add wished product to cart
         productCataloguePage.addProductToCart(productName);
+
+        // Go to Cart Page
         CartPage cartPage = productCataloguePage.goToCartPage();
-        Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");
+
+        // Check if product is in cart list
+        Boolean match = cartPage.verifyProductDisplay("ZARA COAT 33");
         Assert.assertFalse(match);
     }
 }

@@ -23,7 +23,7 @@ public class CartPage extends AbstractHeader {
 
     }
 
-    public Boolean VerifyProductDisplay(String productName) {
+    public Boolean verifyProductDisplay(String productName) {
         Boolean match = cartProducts.stream().anyMatch(product -> product.getText().equalsIgnoreCase(productName));
         return match;
     }
