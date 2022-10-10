@@ -7,36 +7,37 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage extends AbstractHeader {
-    private WebDriver driver;
-    // PageFactory
-    @FindBy(id = "userEmail")
-    private WebElement userEmail;
-    @FindBy(id = "userPassword")
-    private WebElement userPassword;
-    @FindBy(id = "login")
-    private WebElement submit;
 
+    WebDriver driver;
+    @FindBy(id = "userEmail")
+    WebElement userEmail;
+    @FindBy(id = "userPassword")
+    WebElement passwordEle;
+    @FindBy(id = "login")
+    WebElement submit;
     @FindBy(css = "[class*='flyInOut']")
-    private WebElement errorMessage;
+    WebElement errorMessage;
 
     public LandingPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+        PageFactory.initElements(driver, this);
     }
 
-    public void goTo() {
-        driver.get("https://rahulshettyacademy.com/client");
-    }
-
-    public void loginApplication(String email, String password) {
+    public ProductCataloguePage loginApplication(String email, String password) {
         userEmail.sendKeys(email);
-        userPassword.sendKeys(password);
+        passwordEle.sendKeys(password);
         submit.click();
+        ProductCataloguePage productCataloguePage = new ProductCataloguePage(driver);
+        return productCataloguePage;
     }
 
     public String getErrorMessage() {
         waitForWebElementToAppear(errorMessage);
         return errorMessage.getText();
+    }
+
+    public void goTo() {
+        driver.get("https://rahulshettyacademy.com/client");
     }
 }

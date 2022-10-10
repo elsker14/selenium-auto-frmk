@@ -3,18 +3,32 @@ package abstractComponents;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pageObjects.CartPage;
+import pageObjects.OrderPage;
 
 public abstract class AbstractHeader extends AbstractComponent {
     WebDriver driver;
-    @FindBy(css = "[routerlink*='cart']")
-    private WebElement cart;
 
     public AbstractHeader(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }
 
-    public void goToCartPage() {
-        cart.click();
+    @FindBy(css = "[routerlink*='cart']")
+    WebElement cartHeader;
+
+    @FindBy(css = "[routerlink*='myorders']")
+    WebElement orderHeader;
+
+    public CartPage goToCartPage() {
+        cartHeader.click();
+        CartPage cartPage = new CartPage(driver);
+        return cartPage;
+    }
+
+    public OrderPage goToOrdersPage() {
+        orderHeader.click();
+        OrderPage orderPage = new OrderPage(driver);
+        return orderPage;
     }
 }

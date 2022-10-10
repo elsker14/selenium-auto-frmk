@@ -9,23 +9,24 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class ProductCatalogPage extends AbstractHeader {
-    By productsBy = By.cssSelector(".mb-3");
-    By productNameBy = By.cssSelector("b");
-    By addToCartBy = By.cssSelector(".card-body button:last-of-type");
-    By addToCartNotifBy = By.cssSelector("#toast-container");
+public class ProductCataloguePage extends AbstractHeader {
     private WebDriver driver;
-    // PageFactory
-    @FindBy(css = ".mb-3")
-    private List<WebElement> products;
-    @FindBy(css = ".ng-animating")
-    private WebElement spinner;
 
-    public ProductCatalogPage(WebDriver driver) {
+    public ProductCataloguePage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
+
+    By productsBy = By.cssSelector(".mb-3");
+    By productNameBy = By.cssSelector("b");
+    By addToCartBy = By.cssSelector(".card-body button:last-of-type");
+    By addToCartNotifBy = By.cssSelector("#toast-container");
+
+    @FindBy(css = ".mb-3")
+    private List<WebElement> products;
+    @FindBy(css = ".ng-animating")
+    private WebElement spinner;
 
     public List<WebElement> getProductList() {
         waitForElementToAppear(productsBy);
@@ -43,9 +44,5 @@ public class ProductCatalogPage extends AbstractHeader {
         product.findElement(addToCartBy).click();
         waitForElementToAppear(addToCartNotifBy);
         waitForWebElementToDisappear(spinner);
-    }
-
-    public void goToCart() {
-        goToCartPage();
     }
 }

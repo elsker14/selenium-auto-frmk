@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GlobalData.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StandalonePOMTestE2ECourseSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StandalonePOMTestE2EMySolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/OrderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_suite_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2eFrmk/StandaloneTestE2E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandaloneTestE2E.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/StandalonePOMTestE2E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationPOMTestE2E.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/abstractComponents/AbstractBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/abstractComponents/AbstractHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/pageObjects/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/pageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/pageObjects/ProductCatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ProductCatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pomFrmk/pageObjects/SummaryOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/SummaryOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ProductCatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ProductCataloguePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/SummaryOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ErrorValidationPOMTestE2E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandalonePOMTestE2ECourseSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandalonePOMTestE2EMySolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandaloneTestE2E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandaloneTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TestNG" />
         <option value="Class" />
       </list>
     </option>
@@ -50,6 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "J:/Downloads/Browser/SeleniumFrameworkDesign",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,11 +72,11 @@
       <recent name="pomFrmk" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.StandalonePOMTestE2EMySolution">
-    <configuration name="ErrorValidationPOMTestE2E" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/test_suite_1.xml">
+    <configuration name="ErrorValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrmk" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ErrorValidationPOMTestE2E" />
+      <option name="MAIN_CLASS_NAME" value="ErrorValidationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -82,52 +84,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorValidationPOMTestE2E.errorValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="J:/Coding/Practice/UkrainaPower/SeleniumFrmk/test_suite_1.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrmk" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/test_suite_1.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandaloneTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrmk" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ErrorValidationPOMTestE2E" />
-      <option name="METHOD_NAME" value="errorValidationTest" />
+      <option name="MAIN_CLASS_NAME" value="StandaloneTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubmitOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrmk" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SubmitOrderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubmitOrderTest.courseSolutionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrmk" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SubmitOrderTest" />
+      <option name="METHOD_NAME" value="courseSolutionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Pulamea" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrmk" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Pulamea" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StandalonePOMTestE2ECourseSolution.mySolutionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrmk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pomFrmk" />
-      <option name="MAIN_CLASS_NAME" value="StandalonePOMTestE2ECourseSolution" />
-      <option name="METHOD_NAME" value="mySolutionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StandalonePOMTestE2EMySolution" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrmk" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StandalonePOMTestE2EMySolution" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -136,13 +130,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.StandalonePOMTestE2EMySolution" />
-        <item itemvalue="TestNG.ErrorValidationPOMTestE2E" />
-        <item itemvalue="TestNG.Pulamea" />
-        <item itemvalue="TestNG.ErrorValidationPOMTestE2E.errorValidationTest" />
-        <item itemvalue="TestNG.StandalonePOMTestE2ECourseSolution.mySolutionTest" />
+        <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/test_suite_1.xml" />
+        <item itemvalue="TestNG.SubmitOrderTest" />
+        <item itemvalue="TestNG.ErrorValidationTest" />
+        <item itemvalue="TestNG.StandaloneTest" />
+        <item itemvalue="TestNG.SubmitOrderTest.courseSolutionTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="Selenium" />
+    <option name="lastLanguageId" value="JAVA" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -153,7 +151,8 @@
       <option name="presentableId" value="Default" />
       <updated>1665306600489</updated>
       <workItem from="1665306601674" duration="855000" />
-      <workItem from="1665307473563" duration="20923000" />
+      <workItem from="1665307473563" duration="21561000" />
+      <workItem from="1665419957670" duration="2910000" />
     </task>
     <task id="LOCAL-00001" summary="first 2 sections of creating a selenium, testng with multiple abstraction levels framework">
       <created>1665323433946</created>
@@ -162,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665323433946</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3rd section almost done">
+      <created>1665335007914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665335007914</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +176,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first 2 sections of creating a selenium, testng with multiple abstraction levels framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="first 2 sections of creating a selenium, testng with multiple abstraction levels framework" />
+    <MESSAGE value="3rd section almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="3rd section almost done" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -179,19 +186,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StandaloneTestE2E.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StandaloneTestE2E.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/test/java/SubmitOrderTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
