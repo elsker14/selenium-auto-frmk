@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Suite 1">
-    <test thread-count="5" name="Standalone Test">
+<suite parallel="tests" name="Error Validation Suite">
+    <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups>
+
+    <test thread-count="1" name="Standalone Test">
         <classes>
             <class name="StandaloneTest"></class>
         </classes>
     </test>
 
-    <test thread-count="5" name="Submit Order Test">
+    <test thread-count="1" name="Submit Order Test">
         <classes>
             <class name="SubmitOrderTest"></class>
-        </classes>
-    </test>
-
-    <test thread-count="5" name="Error Validation Test">
-        <classes>
-            <class name="ErrorValidationTest"></class>
         </classes>
     </test>
 </suite>

@@ -17,7 +17,7 @@ public class ErrorValidationTest extends BaseTest {
         Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
     }
 
-    @Test
+    @Test(groups = {"ErrorHandling"})
     public void ProductErrorValidation() {
         String productName = "ZARA COAT 3";
 

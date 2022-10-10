@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/testSuites/ErrorValidationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuites/ParallelSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_suite_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/SequentialSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TestNG" />
         <option value="Class" />
+        <option value="TestNG" />
       </list>
     </option>
   </component>
@@ -41,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "J:/Downloads/Browser/SeleniumFrameworkDesign",
+    "last_opened_file_path": "J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +55,13 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk\testSuites" />
+      <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk\testSuites" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -62,12 +70,31 @@
       <recent name="pomFrmk" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/test_suite_1.xml">
-    <configuration name="ErrorValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ErrorValidationTests.xml">
+    <configuration name="J:/Coding/Practice/UkrainaPower/SeleniumFrmk/ParallelSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrmk" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ErrorValidationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/ParallelSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ErrorValidationTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrmk" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuites/ErrorValidationTests.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ParallelSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrmk" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuites/ParallelSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -78,17 +105,6 @@
       <module name="SeleniumFrmk" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/test_suite_1.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StandaloneTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrmk" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StandaloneTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -106,25 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubmitOrderTest.courseSolutionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrmk" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SubmitOrderTest" />
-      <option name="METHOD_NAME" value="courseSolutionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ErrorValidationTests.xml" />
+        <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ParallelSuite.xml" />
+        <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/ParallelSuite.xml" />
         <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/test_suite_1.xml" />
         <item itemvalue="TestNG.SubmitOrderTest" />
-        <item itemvalue="TestNG.ErrorValidationTest" />
-        <item itemvalue="TestNG.StandaloneTest" />
-        <item itemvalue="TestNG.SubmitOrderTest.courseSolutionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +146,7 @@
       <updated>1665306600489</updated>
       <workItem from="1665306601674" duration="855000" />
       <workItem from="1665307473563" duration="21561000" />
-      <workItem from="1665419957670" duration="4161000" />
+      <workItem from="1665419957670" duration="4935000" />
     </task>
     <task id="LOCAL-00001" summary="first 2 sections of creating a selenium, testng with multiple abstraction levels framework">
       <created>1665323433946</created>
@@ -165,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665423116740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added comments steps">
+      <created>1665424142019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665424142019</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +186,8 @@
     <MESSAGE value="first 2 sections of creating a selenium, testng with multiple abstraction levels framework" />
     <MESSAGE value="3rd section almost done" />
     <MESSAGE value="corrected frmk bc before, after methods were inefective" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected frmk bc before, after methods were inefective" />
+    <MESSAGE value="added comments steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments steps" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

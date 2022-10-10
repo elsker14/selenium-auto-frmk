@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sequential Suite">
+    <test thread-count="5" name="Standalone Test">
+        <classes>
+            <class name="StandaloneTest"></class>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Submit Order Test">
+        <classes>
+            <class name="SubmitOrderTest"></class>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Error Validation Test">
+        <classes>
+            <class name="ErrorValidationTest"></class>
+        </classes>
+    </test>
+</suite>
