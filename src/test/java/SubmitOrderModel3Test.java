@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import pageObjects.*;
 import testComponents.BaseTest;
 
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -17,26 +19,26 @@ CSS Selector:
     [attribute*='word'] (contains word)
  */
 
-public class SubmitOrderModel1Test extends BaseTest {
+public class SubmitOrderModel3Test extends BaseTest {
     String productName = "ZARA COAT 3";
 
-    @Test(dataProvider = "getDataUsingObjectMatrix", groups = {"Purchase"})
-    public void submitOrder(String emailDP, String passwordDP, String productNameDP) throws InterruptedException {
+    @Test(dataProvider = "getDataUsingHashMap", groups = {"Purchase"})
+    public void submitOrder(HashMap<String, String> inputDP) throws InterruptedException {
         // Log in to app and go to product catalogue page
-        ProductCataloguePage productCataloguePage = landingPage.loginApplication(emailDP, passwordDP);
+        ProductCataloguePage productCataloguePage = landingPage.loginApplication(inputDP.get("emailDP"), inputDP.get("passwordDP"));
 
         // Get all products on page
         List<WebElement> products = productCataloguePage.getProductList();
 
         // Add wished product to cart
-        productCataloguePage.addProductToCart(productNameDP);
+        productCataloguePage.addProductToCart(inputDP.get("productNameDP"));
         Thread.sleep(3000);
 
         // Go to Cart Page
         CartPage cartPage = productCataloguePage.goToCartPage();
 
         // Check if product is in cart list
-        Boolean match = cartPage.verifyProductDisplay(productNameDP);
+        Boolean match = cartPage.verifyProductDisplay(inputDP.get("productNameDP"));
         Assert.assertTrue(match);
 
         // Go to Checkout Page
@@ -65,12 +67,14 @@ public class SubmitOrderModel1Test extends BaseTest {
         Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
     }
 
+    /* Data Provider using HashMap */
     @DataProvider
-    public Object[][] getDataUsingObjectMatrix() {
-        // In test you will have 3 arguments that will take each value
+    public Object[][] getDataUsingHashMap() throws IOException {
+        List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir") + "/src/main/resources/data/PurchaseOrder.json");
+        //J:\Coding\Practice\UkrainaPower\SeleniumFrmk\src\main\resources\data\PurchaseOrder.json
         return new Object[][]{
-                {"iancujianu98@gmail.com", "Pernutepufoase14*", "ZARA COAT 3"},
-                {"iancujianu.works@gmail.com", "Marcelcuceritorul14*", "ADIDAS ORIGINAL"}
+                {data.get(0)},
+                {data.get(1)}
         };
     }
 }

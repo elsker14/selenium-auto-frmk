@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pageObjects.*;
 import testComponents.BaseTest;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -20,23 +21,23 @@ CSS Selector:
 public class SubmitOrderModel2Test extends BaseTest {
     String productName = "ZARA COAT 3";
 
-    @Test(dataProvider = "getDataUsingObjectMatrix", groups = {"Purchase"})
-    public void submitOrder(String emailDP, String passwordDP, String productNameDP) throws InterruptedException {
+    @Test(dataProvider = "getDataUsingHashMap", groups = {"Purchase"})
+    public void submitOrder(HashMap<String, String> inputDP) throws InterruptedException {
         // Log in to app and go to product catalogue page
-        ProductCataloguePage productCataloguePage = landingPage.loginApplication(emailDP, passwordDP);
+        ProductCataloguePage productCataloguePage = landingPage.loginApplication(inputDP.get("emailDP"), inputDP.get("passwordDP"));
 
         // Get all products on page
         List<WebElement> products = productCataloguePage.getProductList();
 
         // Add wished product to cart
-        productCataloguePage.addProductToCart(productNameDP);
+        productCataloguePage.addProductToCart(inputDP.get("productNameDP"));
         Thread.sleep(3000);
 
         // Go to Cart Page
         CartPage cartPage = productCataloguePage.goToCartPage();
 
         // Check if product is in cart list
-        Boolean match = cartPage.verifyProductDisplay(productNameDP);
+        Boolean match = cartPage.verifyProductDisplay(inputDP.get("productNameDP"));
         Assert.assertTrue(match);
 
         // Go to Checkout Page
@@ -65,12 +66,23 @@ public class SubmitOrderModel2Test extends BaseTest {
         Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
     }
 
+    /* Data Provider using HashMap */
     @DataProvider
-    public Object[][] getDataUsingObjectMatrix() {
-        // In test you will have 3 arguments that will take each value
+    public Object[][] getDataUsingHashMap() {
+        // In test you will have 1 argument that will get each value from map
+        HashMap<String, String> map1 = new HashMap<>();
+        map1.put("emailDP", "iancujianu98@gmail.com");
+        map1.put("passwordDP", "Pernutepufoase14*");
+        map1.put("productNameDP", "ZARA COAT 3");
+
+        HashMap<String, String> map2 = new HashMap<>();
+        map2.put("emailDP", "iancujianu.works@gmail.com");
+        map2.put("passwordDP", "Marcelcuceritorul14*");
+        map2.put("productNameDP", "ADIDAS ORIGINAL");
+
         return new Object[][]{
-                {"iancujianu98@gmail.com", "Pernutepufoase14*", "ZARA COAT 3"},
-                {"iancujianu.works@gmail.com", "Marcelcuceritorul14*", "ADIDAS ORIGINAL"}
+                {map1},
+                {map2}
         };
     }
 }

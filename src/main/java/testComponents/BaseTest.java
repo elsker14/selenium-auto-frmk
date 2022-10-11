@@ -1,5 +1,6 @@
 package testComponents;
 
+import dataReader.DataReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +17,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class BaseTest {
+public class BaseTest extends DataReader {
 
     public WebDriver driver;
     public LandingPage landingPage;

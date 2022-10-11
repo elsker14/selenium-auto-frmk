@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="SubmitOrderModel1Test"/>
+            <class name="SubmitOrderModel2Test"/>
         </classes>
     </test>
 </suite>
