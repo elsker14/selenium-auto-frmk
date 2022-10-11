@@ -51,6 +51,7 @@ public class Listeners extends BaseTest implements ITestListener {
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
         threadLocal.get().log(Status.SKIP, " ::: TEST SKIPPED ::: ");
+        threadLocal.get().skip("REASON: " + iTestResult.getThrowable());
     }
 
     @Override
