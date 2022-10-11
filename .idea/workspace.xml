@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testComponents/ExtentReporterNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testComponents/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/dataReader/DataReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderModel3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/ErrorValidationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/ErrorValidationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/PurchaseTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/PurchaseTests.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +145,7 @@
       <workItem from="1665306601674" duration="855000" />
       <workItem from="1665307473563" duration="21561000" />
       <workItem from="1665419957670" duration="6293000" />
-      <workItem from="1665466450098" duration="8334000" />
+      <workItem from="1665466450098" duration="8747000" />
     </task>
     <task id="LOCAL-00001" summary="first 2 sections of creating a selenium, testng with multiple abstraction levels framework">
       <created>1665323433946</created>
@@ -222,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665499653781</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added listeners">
+      <created>1665503268927</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665503268927</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +233,8 @@
     <MESSAGE value="added DP in 3rd way using Jackson library" />
     <MESSAGE value="moved file" />
     <MESSAGE value="finished 4th section of the frmk" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished 4th section of the frmk" />
+    <MESSAGE value="added listeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="added listeners" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

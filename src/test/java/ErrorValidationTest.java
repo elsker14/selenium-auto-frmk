@@ -18,7 +18,7 @@ public class ErrorValidationTest extends BaseTest {
     }
 
     @Test(groups = {"ErrorHandling"})
-    public void ProductErrorValidation() {
+    public void ProductErrorValidation() throws InterruptedException {
         String productName = "ZARA COAT 3";
 
         // Log in to app and go to product catalogue page
@@ -31,6 +31,7 @@ public class ErrorValidationTest extends BaseTest {
         productCataloguePage.addProductToCart(productName);
 
         // Go to Cart Page
+        Thread.sleep(2000);
         CartPage cartPage = productCataloguePage.goToCartPage();
 
         // Check if product is in cart list
