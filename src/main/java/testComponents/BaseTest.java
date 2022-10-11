@@ -1,6 +1,5 @@
 package testComponents;
 
-import dataReader.DataReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.LandingPage;
+import testComponents.dataReader.DataReader;
 
 import java.io.FileInputStream;
 import java.io.IOException;

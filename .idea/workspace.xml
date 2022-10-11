@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="added DP in 2 ways">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataReader/DataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/PurchaseOrder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/testComponents/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataReader/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testComponents/dataReader/DataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderModel1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderModel2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/ParallelSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/ParallelSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/PurchaseTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/PurchaseTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/SequentialSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/SequentialSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +19,7 @@
       <list>
         <option value="TestNG" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -156,7 +149,7 @@
       <workItem from="1665306601674" duration="855000" />
       <workItem from="1665307473563" duration="21561000" />
       <workItem from="1665419957670" duration="6293000" />
-      <workItem from="1665466450098" duration="4032000" />
+      <workItem from="1665466450098" duration="4356000" />
     </task>
     <task id="LOCAL-00001" summary="first 2 sections of creating a selenium, testng with multiple abstraction levels framework">
       <created>1665323433946</created>
@@ -200,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665497507786</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added DP in 3rd way using Jackson library">
+      <created>1665498974562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665498974562</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +213,8 @@
     <MESSAGE value="added comments steps" />
     <MESSAGE value="added xmls" />
     <MESSAGE value="added DP in 2 ways" />
-    <option name="LAST_COMMIT_MESSAGE" value="added DP in 2 ways" />
+    <MESSAGE value="added DP in 3rd way using Jackson library" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DP in 3rd way using Jackson library" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
