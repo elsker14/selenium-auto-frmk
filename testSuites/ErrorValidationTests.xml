@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Error Validation Suite">
-    <groups>
-        <run>
-            <include name="ErrorHandling"/>
-        </run>
-    </groups>
+    <listeners>
+        <listener class-name="testComponents.Listeners"/>
+    </listeners>
 
     <test thread-count="1" name="Error ValidationTest">
+        <groups>
+            <run>
+                <include name="ErrorHandling"/>
+            </run>
+        </groups>
+
         <classes>
             <class name="ErrorValidationTest"/>
         </classes>

@@ -1,7 +1,12 @@
 package testComponents;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,14 +15,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.LandingPage;
-import testComponents.dataReader.DataReader;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
-public class BaseTest extends DataReader {
+public class BaseTest {
 
     public WebDriver driver;
     public LandingPage landingPage;
@@ -64,12 +72,33 @@ public class BaseTest extends DataReader {
         landingPage = new LandingPage(driver);
         landingPage.goTo();
         return landingPage;
-
-
     }
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.close();
+    }
+
+    public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
+        // read json to string
+        String jsonContent = FileUtils.readFileToString(
+                new File(filePath),
+                StandardCharsets.UTF_8
+        );
+
+        // String to HashMap using Jackson Databind
+        ObjectMapper mapper = new ObjectMapper();
+        List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
+        });
+
+        return data;
+    }
+
+    public File getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+        TakesScreenshot tsDriver = ((TakesScreenshot) driver);
+        File source = tsDriver.getScreenshotAs(OutputType.FILE);
+        File destination = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+        FileUtils.copyFile(source, destination);
+        return destination;
     }
 }
