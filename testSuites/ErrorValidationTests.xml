@@ -7,15 +7,9 @@
         </run>
     </groups>
 
-    <test thread-count="1" name="Standalone Test">
+    <test thread-count="1" name="Error ValidationTest">
         <classes>
-            <class name="StandaloneTest"></class>
-        </classes>
-    </test>
-
-    <test thread-count="1" name="Submit Order Test">
-        <classes>
-            <class name="SubmitOrderTest"></class>
+            <class name="ErrorValidationTest"/>
         </classes>
     </test>
 </suite>

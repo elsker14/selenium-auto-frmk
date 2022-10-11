@@ -9,7 +9,7 @@
 
     <test thread-count="1" name="Submit Order Test">
         <classes>
-            <class name="SubmitOrderTest"></class>
+            <class name="SubmitOrderModel1Test"></class>
         </classes>
     </test>
 
