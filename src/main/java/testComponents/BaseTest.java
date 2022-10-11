@@ -46,6 +46,7 @@ public class BaseTest {
             WebDriverManager.chromedriver().setup();
             if (browserName.contains("headless")) {
                 options.addArguments("headless");
+                options.setHeadless(true);
             }
             driver = new ChromeDriver(options);
             driver.manage().window().setSize(new Dimension(1440, 900));
@@ -55,6 +56,7 @@ public class BaseTest {
             driver = new FirefoxDriver();
             if (browserName.contains("headless")) {
                 options.addArguments("headless");
+                options.setHeadless(true);
             }
         } else if (browserName.contains("edge")) {
             EdgeOptions options = new EdgeOptions();
@@ -62,6 +64,7 @@ public class BaseTest {
             driver = new EdgeDriver();
             if (browserName.contains("headless")) {
                 options.addArguments("headless");
+                options.setHeadless(true);
             }
         }
 
