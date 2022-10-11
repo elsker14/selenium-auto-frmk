@@ -13,10 +13,11 @@ import java.io.IOException;
 public class Listeners extends BaseTest implements ITestListener {
     ExtentTest test;
     ExtentReports extentReports = ExtentReporterNG.getRerportObject();
-
+    ThreadLocal<ExtentTest> threadLocal = new ThreadLocal(); // making it Thread Safe
     @Override
     public void onTestStart(ITestResult iTestResult) {
         test = extentReports.createTest(iTestResult.getMethod().getMethodName());
+        threadLocal.set(test);  // when we ran parallel every test will be added on its own thread, so they don't overlap
     }
 
     @Override
@@ -26,8 +27,8 @@ public class Listeners extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        test.log(Status.FAIL, " ::: TEST FAILED ::: ");
-        test.fail("REASON: " + iTestResult.getThrowable());
+        threadLocal.get().log(Status.FAIL, " ::: TEST FAILED ::: ");
+        threadLocal.get().fail("REASON: " + iTestResult.getThrowable());
 
         // Take screenshot
         try {
@@ -44,12 +45,12 @@ public class Listeners extends BaseTest implements ITestListener {
         }
 
         // Attach to report
-        test.addScreenCaptureFromPath(filePath);
+        threadLocal.get().addScreenCaptureFromPath(filePath);
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        test.log(Status.SKIP, " ::: TEST SKIPPED ::: ");
+        threadLocal.get().log(Status.SKIP, " ::: TEST SKIPPED ::: ");
     }
 
     @Override

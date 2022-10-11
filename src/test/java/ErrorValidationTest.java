@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import pageObjects.CartPage;
 import pageObjects.ProductCataloguePage;
 import testComponents.BaseTest;
+import testComponents.Retry;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,10 +12,10 @@ import java.util.List;
 
 public class ErrorValidationTest extends BaseTest {
 
-    @Test(groups = {"ErrorHandling"})
+    @Test(groups = {"ErrorHandling"}, retryAnalyzer = Retry.class)
     public void LoginErrorValidation() throws IOException, InterruptedException {
         landingPage.loginApplication("anshika@gmail.com", "Iamki000");
-        Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+        Assert.assertEquals("Incorrect email  password.", landingPage.getErrorMessage());
     }
 
     @Test(groups = {"ErrorHandling"})
