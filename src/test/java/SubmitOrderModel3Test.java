@@ -1,3 +1,6 @@
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -5,6 +8,7 @@ import org.testng.annotations.Test;
 import pageObjects.*;
 import testComponents.BaseTest;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -76,5 +80,13 @@ public class SubmitOrderModel3Test extends BaseTest {
                 {data.get(0)},
                 {data.get(1)}
         };
+    }
+
+    public File getScreenshot(String testCaseName) throws IOException {
+        TakesScreenshot tsDriver = ((TakesScreenshot) driver);
+        File source = tsDriver.getScreenshotAs(OutputType.FILE);
+        File destination = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+        FileUtils.copyFile(source, destination);
+        return destination;
     }
 }
