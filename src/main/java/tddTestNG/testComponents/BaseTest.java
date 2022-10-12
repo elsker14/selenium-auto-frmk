@@ -1,4 +1,4 @@
-package testComponents;
+package tddTestNG.testComponents;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,7 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pageObjects.LandingPage;
+import tddTestNG.pageObjects.LandingPage;
 
 import java.io.File;
 import java.io.FileInputStream;

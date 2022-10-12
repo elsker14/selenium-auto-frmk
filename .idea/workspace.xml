@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5694943-d960-4a70-b537-a78ed1b5b5b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bddCucumber/features/SubmitOrder.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bddCucumber/stepDefinitions/StepDefinitionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/abstractComponents/AbstractComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstractComponents/AbstractHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/abstractComponents/AbstractHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/pageObjects/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/pageObjects/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/pageObjects/ConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/pageObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/pageObjects/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ProductCataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/pageObjects/ProductCataloguePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/testComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/ExtentReporterNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/testComponents/ExtentReporterNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/testComponents/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testComponents/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddTestNG/testComponents/Retry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandaloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandaloneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderModel1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderModel2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitOrderModel3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitOrderModel3Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSuites/ErrorValidationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/ErrorValidationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSuites/PurchaseTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/PurchaseTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,31 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "fileTemplates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk\testSuites" />
       <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk\src\main\java\bddCucumber\features" />
       <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk\testSuites" />
       <recent name="J:\Coding\Practice\UkrainaPower\SeleniumFrmk" />
     </key>
@@ -71,7 +94,7 @@
       <recent name="pomFrmk" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ErrorValidationTests.xml">
+  <component name="RunManager" selected="TestNG.SubmitOrderModel2Test">
     <configuration name="ErrorValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrmk" />
       <option name="PACKAGE_NAME" value="" />
@@ -127,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SubmitOrderModel2Test" />
+        <item itemvalue="TestNG.SubmitOrderModel3Test" />
         <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/ErrorValidationTests.xml" />
         <item itemvalue="TestNG.J:/Coding/Practice/UkrainaPower/SeleniumFrmk/testSuites/PurchaseTests.xml" />
         <item itemvalue="TestNG.ErrorValidationTest" />
-        <item itemvalue="TestNG.SubmitOrderModel3Test" />
-        <item itemvalue="TestNG.SubmitOrderModel2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +173,10 @@
       <workItem from="1665306601674" duration="855000" />
       <workItem from="1665307473563" duration="21561000" />
       <workItem from="1665419957670" duration="6293000" />
-      <workItem from="1665466450098" duration="15495000" />
+      <workItem from="1665466450098" duration="20524000" />
+      <workItem from="1665588663812" duration="25000" />
+      <workItem from="1665601844986" duration="2897000" />
+      <workItem from="1665606072813" duration="2329000" />
     </task>
     <task id="LOCAL-00001" summary="first 2 sections of creating a selenium, testng with multiple abstraction levels framework">
       <created>1665323433946</created>
@@ -257,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665510551201</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add setheadless boolean check">
+      <created>1665510958835</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665510958835</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +313,8 @@
     <MESSAGE value="configured maven commands" />
     <MESSAGE value="last changes" />
     <MESSAGE value="added headless mode for all browsers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added headless mode for all browsers" />
+    <MESSAGE value="add setheadless boolean check" />
+    <option name="LAST_COMMIT_MESSAGE" value="add setheadless boolean check" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

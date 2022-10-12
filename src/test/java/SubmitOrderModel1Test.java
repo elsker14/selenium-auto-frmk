@@ -2,8 +2,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pageObjects.*;
-import testComponents.BaseTest;
+import tddTestNG.pageObjects.*;
+import tddTestNG.testComponents.BaseTest;
 
 import java.util.List;
 

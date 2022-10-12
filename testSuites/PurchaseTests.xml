@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Purchase Group Suite">
     <listeners>
-        <listener class-name="testComponents.Listeners"/>
+        <listener class-name="tddTestNG.testComponents.Listeners"/>
     </listeners>
 
     <test thread-count="1" name="Purchase Group Tests">

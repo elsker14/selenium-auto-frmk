@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.LandingPage;
+import tddTestNG.pageObjects.LandingPage;
 
 import java.time.Duration;
 import java.util.List;

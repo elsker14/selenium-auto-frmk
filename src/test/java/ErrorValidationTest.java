@@ -1,10 +1,10 @@
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.CartPage;
-import pageObjects.ProductCataloguePage;
-import testComponents.BaseTest;
-import testComponents.Retry;
+import tddTestNG.pageObjects.CartPage;
+import tddTestNG.pageObjects.ProductCataloguePage;
+import tddTestNG.testComponents.BaseTest;
+import tddTestNG.testComponents.Retry;
 
 import java.io.IOException;
 import java.util.List;

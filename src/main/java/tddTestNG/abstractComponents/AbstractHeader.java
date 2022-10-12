@@ -1,10 +1,10 @@
-package abstractComponents;
+package tddTestNG.abstractComponents;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pageObjects.CartPage;
-import pageObjects.OrderPage;
+import tddTestNG.pageObjects.CartPage;
+import tddTestNG.pageObjects.OrderPage;
 
 public abstract class AbstractHeader extends AbstractComponent {
     WebDriver driver;

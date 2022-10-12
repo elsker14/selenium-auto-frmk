@@ -1,4 +1,4 @@
-package abstractComponents;
+package tddTestNG.abstractComponents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
